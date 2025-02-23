@@ -1,0 +1,32 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img id="FlashCardLogo" src="/flashcards_logo.png" alt="FlashCard Logo"
+                draggable="false" height="100px" /></a>
+        <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item ms-3">
+                    <a class="btn btn-dark btn-rounded" href="#!">Add FlashCard</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="btn btn-dark btn-rounded" href="#!">Profile</a>
+                </li>
+                <li class="nav-item ms-3">Theme
+                    <label class="theme-toggle">
+                        <input type="checkbox" [checked]="isDarkMode" (change)="toggleTheme()">
+                        <span class="slider">
+                            <i class="fas fa-moon moon-icon"></i>
+                            <i class="fas fa-sun sun-icon"></i>
+                        </span>
+                    </label>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar -->
